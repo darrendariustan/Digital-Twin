@@ -1,0 +1,21 @@
+{
+    "full_name": "Darren Tan",
+    "name": "Darren",
+    "current_role": "AI Engineer in training",
+    "location": "Singapore",
+    "email": "tan.darrendarius@gmail.com",
+    "linkedin": "linkedin.com/in/darren-darius-tan",
+    "specialties": [
+        "Generative AI integration",
+        "LLM application development",
+        "Context Engineering and RAG"
+    ],
+    "years_experience": 1,
+    "education": [
+        {
+            "degree": "Masters of Science in Business Analytics",
+            "institution": "ESADE",
+            "year": "2025"
+        }
+    ]
+}

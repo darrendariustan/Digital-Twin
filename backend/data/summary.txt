@@ -1,0 +1,5 @@
+I am an AI Engineer in training learning about Generative AI integration and LLM application development. My expertise includes Context Engineering, prompt optimization, and AI/ML models deployment in production.
+
+Currently, I’m focused on leveraging Amazon Bedrock and OpenAI to create high-fidelity Digital Twins that maintain conversational state through stateless serverless architectures. I'm particularly interested in the intersection of serverless compute and real-time AI memory.
+
+My background includes building robust backend APIs with FastAPI, managing secure CORS protocols for global web apps, and developing multi-modal data pipelines that parse unstructured PDFs into actionable AI context.

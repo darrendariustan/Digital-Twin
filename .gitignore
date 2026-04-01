@@ -39,3 +39,10 @@ Thumbs.db
 
 # AWS
 .aws/
+
+# Claude files
+CLAUDE.md
+DEEP_DOC_SKILL.md
+.claude/*
+.claude
+guides/*

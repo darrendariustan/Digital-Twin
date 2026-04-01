@@ -136,8 +136,8 @@ resource "aws_lambda_function" "api" {
       CORS_ORIGINS  = var.use_custom_domain ? "https://${var.root_domain},https://www.${var.root_domain}" : "https://${aws_cloudfront_distribution.main.domain_name}"
       S3_BUCKET     = aws_s3_bucket.memory.id
       USE_S3        = "true"
-      OPENAI_API_KEY = var.openai_api_key
-      OPENAI_MODEL   = var.openai_model
+      BEDROCK_MODEL   = var.bedrock_model
+      BEDROCK_REGION  = var.bedrock_region
     }
   }
 

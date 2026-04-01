@@ -16,16 +16,16 @@ variable "environment" {
   }
 }
 
-variable "openai_api_key" {
-  description = "OpenAI API key"
+variable "bedrock_model" {
+  description = "Amazon Bedrock model ID to use"
   type        = string
-  sensitive   = true
+  default     = "us.amazon.nova-lite-v1:0"
 }
 
-variable "openai_model" {
-  description = "OpenAI model to use"
+variable "bedrock_region" {
+  description = "AWS region for Bedrock API calls"
   type        = string
-  default     = "gpt-4o-mini"
+  default     = "us-east-1"
 }
 
 variable "lambda_timeout" {

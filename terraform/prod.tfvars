@@ -1,12 +1,11 @@
 # Production environment overrides
-# openai_api_key is NOT set here — it is injected at deploy time via
-# the OPENAI_API_KEY environment variable (GitHub Actions secret / local env).
+# No API key needed — Bedrock authenticates via the Lambda execution role's IAM permissions.
 
 project_name = "twin"
 environment  = "prod"
 
-# Use a more capable model in production
-openai_model = "gpt-4o"
+# Amazon Bedrock model for production
+bedrock_model = "us.amazon.nova-lite-v1:0"
 
 # Higher limits for production traffic
 lambda_timeout           = 120
@@ -14,5 +13,5 @@ api_throttle_burst_limit = 50
 api_throttle_rate_limit  = 25
 
 # Set to true and provide root_domain if you have a custom domain in Route53
-use_custom_domain = false
-root_domain       = ""
+use_custom_domain = true
+root_domain       = "darren-digitaltwin.click"

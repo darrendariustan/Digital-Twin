@@ -33,24 +33,16 @@ else {
     terraform workspace select $Environment
 }
 
-$OpenAiApiKey = $env:OPENAI_API_KEY
-if (-not $OpenAiApiKey) {
-    Write-Error "OPENAI_API_KEY environment variable is not set. Aborting."
-    exit 1
-}
-
 if ($Environment -eq "prod") {
     terraform apply -var-file="prod.tfvars" `
         -var="project_name=$ProjectName" `
         -var="environment=$Environment" `
-        -var="openai_api_key=$OpenAiApiKey" `
         -auto-approve
 }
 else {
     terraform apply `
         -var="project_name=$ProjectName" `
         -var="environment=$Environment" `
-        -var="openai_api_key=$OpenAiApiKey" `
         -auto-approve
 }
 

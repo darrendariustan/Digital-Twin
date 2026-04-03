@@ -1,6 +1,6 @@
 # Digital Twin
 
-This project is a Digital Twin application—a personalized AI assistant modeled to answer questions and interact based on specific provided context. Built as part of the "AI in MLOps" course (Week 2, Day 5) by Ed Donner, it utilizes a modern serverless cloud architecture on AWS to provide a highly scalable, low-latency chatbot experience powered by Amazon Bedrock.
+This project is a Digital Twin application—a personalized AI assistant modeled to answer questions and interact with an agent representing Darren based on specific provided context. It utilizes a modern serverless cloud architecture on AWS to provide a highly scalable, low-latency chatbot experience powered by Amazon Bedrock.
 
 ## 🚀 Tech Stack
 

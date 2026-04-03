@@ -108,9 +108,9 @@ export default function Twin() {
             <div className="bg-gradient-to-r from-slate-700 to-slate-800 text-white p-4 rounded-t-lg">
                 <h2 className="text-xl font-semibold flex items-center gap-2">
                     <Bot className="w-6 h-6" />
-                    AI Digital Twin
+                    Darren's Agentic Twin
                 </h2>
-                <p className="text-sm text-slate-300 mt-1">Your AI course companion</p>
+                <p className="text-sm text-slate-300 mt-1">I am available 24/7 to answer your questions when Darren is sleeping!</p>
             </div>
 
             {/* Messages */}
@@ -155,8 +155,8 @@ export default function Twin() {
 
                         <div
                             className={`max-w-[70%] rounded-lg p-3 ${message.role === 'user'
-                                    ? 'bg-slate-700 text-white'
-                                    : 'bg-white border border-gray-200 text-gray-800'
+                                ? 'bg-slate-700 text-white'
+                                : 'bg-white border border-gray-200 text-gray-800'
                                 }`}
                         >
                             <p className="whitespace-pre-wrap">{message.content}</p>
